@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="scan_">
+        <item>Scan Sale</item>
+        <item>Scan Void</item>
+        <item>Scan Refund</item>
+    </string-array>
+
+    <string-array name="preauth_">
+        <item>Auth</item>
+        <item>Auth Void</item>
+        <item>Auth Complete</item>
+        <item>Complete Void</item>
+    </string-array>
+
+    <string-array name="print_">
+        <item>Query Details</item>
+        <item>Reprint Last</item>
+        <item>Print Details</item>
+    </string-array>
+
+    <string-array name="mana_">
+        <item>Logon</item>
+        <item>Down Para</item>
+        <item>Settle</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string-array name="others_">
+        <item>Balance</item>
+        <item>EC Balance</item>
+        <item>Refund</item>
+    </string-array>
+
+    <string-array name="setting_items">
+        <item>Communication paras</item>
+        <item>Transaction paras</item>
+        <item>Keys paras</item>
+        <item>Change maintain pwd</item>
+        <item>Errlog list</item>
+        <item>Private paras</item>
+        <item>Feedback and Advice</item>
+    </string-array>
+
+    <string-array name="setting_items2">
+        <item>Communication paras</item>
+        <item>Transaction paras</item>
+        <item>Keys paras</item>
+        <item>Private paras</item>
+    </string-array>
+
+    <string-array name="onoff">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+
+    <string-array name="scanner_back">
+        <item>Back camera</item>
+        <item>Front camera</item>
+    </string-array>
+
+    <string-array name="print_num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="reversal_counts">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="exit_time">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+
+
+    <string-array name="wait_time">
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="commun_timeout">
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="privacy_online">
+        <item>Online Trans</item>
+        <item>Local Presentation</item>
+    </string-array>
+
+    <string-array name="privacy_debug">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+</resources>

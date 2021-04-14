@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./libs/dataapi.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/dataapi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@drawable/icon_background"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        layout="@layout/welcome_whats_title"/>
+    <TextView
+        android:text="@string/open_app_debug_output"
+        android:id="@+id/welcome_2_tv"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#48495F"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_below="@id/welcome_2_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/welcome_2_debug"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#48495F"
+            android:checked="false"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/open_app_debug_output"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/welcome_2_nodebug"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#48495F"
+            android:checked="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/close_app_debug_output"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</RelativeLayout>

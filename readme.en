@@ -1,0 +1,16 @@
+20180202
+************************************
+1.Adjust style of "classical" and Unified resource management
+2.Add title for all transaction surface
+3.Fix logic problem of all printing
+4.Add verification of legality on all information which user inputs
+5.Add adapter function when system locale changes
+
+20180403
+************************************
+1.upgrade the libpboc.jar file
+
+20190710
+************************************
+1.Add MIS function
+2.Add RongPay into RongDesktop System Architecture

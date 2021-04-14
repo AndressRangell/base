@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\build-types\debug\shaders"/></dataSet></merger>

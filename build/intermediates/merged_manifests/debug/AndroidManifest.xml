@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.newpos.pay"
+    android:versionCode="2"
+    android:versionName="1.0.210413" > <!-- TODO make this not required again after android.hardware.camera.any is available -->
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <!-- TODO replace above two with next line after Android 4.launcher_simple_en -->
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <!-- This excludes Google TV, which is unfortunately included by virtue of not requiring a camera -->
+    <uses-feature android:name="android.hardware.touchscreen" />
+
+    <application
+        android:name="cn.desert.newpos.payui.base.PayApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:configChanges="orientation|screenSize|locale|mcc|mnc"
+        android:debuggable="true"
+        android:fullBackupContent="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library
+            android:name="com.pos.device"
+            android:required="true" >
+        </uses-library>
+
+        <activity
+            android:name="cn.desert.newpos.payui.splash.Welcome"
+            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.YOUZI"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.newpos.pay.HomeActivity"
+            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WUZI"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- <category android:name="android.intent.category.HOME" /> -->
+                <!-- <category android:name="android.intent.category.MONKEY" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.desert.newpos.payui.master.MasterControl"
+            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WUZI"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="cn.desert.newpos.payui.master.ResultControl"
+            android:configChanges="mcc|mnc|orientation|screenSize|keyboard|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+.
+        <activity
+            android:name="cn.desert.newpos.payui.setting.ui.SettingsFrags"
+            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WUZI"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="cn.desert.newpos.payui.transrecord.HistoryTrans"
+            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WUZI"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.desert.newpos.payui.transrecord.HistoryDetail"
+            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.WUZI" />
+        <activity
+            android:name="cn.desert.newpos.payui.transrecord.PrintLastTrans"
+            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.WUZI" />
+
+        <receiver android:name="cn.desert.newpos.payui.base.LocaleChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.android.newpos.mis.service.MisService"
+            android:exported="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.NEWPOS_MIS" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="cn.desert.newpos.payui.setting.ui.classical.TransparaFrags" />
+        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.CommunSettings" />
+        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.KeysSettings" />
+        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.TransSetting" />
+        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.PrivateSettings" />
+        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.FeedbackSettings" />
+        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.ErrlogSettings" />
+        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.transson.TransMerchantSetting" />
+        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.transson.TransSysSetting" />
+        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.transson.TransScanSetting" />
+        <activity
+            android:name="com.android.newpos.payapi.RSaleActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RVoidActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RRefundActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RScanPayActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RScanVoidActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RScanRefundActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RPreActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RPreVoidActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RPreCompActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RCompVoidActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RQueryDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RReprintLastActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RPrintDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RDownParaActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RSettleActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RBalanceActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.newpos.payapi.RECBalanceActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

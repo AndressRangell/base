@@ -1,0 +1,121 @@
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+buildscript {
+    ext.kotlin_version = '1.5.0-M2'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+repositories{
+    flatDir{
+        dirs 'extaar'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(include: '*.jar', dir: 'libs')
+    implementation 'com.sun.mail:android-mail:1.5.5'
+    implementation 'com.sun.mail:android-activation:1.5.5'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation files('libs/dataapi.jar')
+    implementation files('libs/desert-email-1709191523.jar')
+    implementation files('libs/libpboc.jar')
+    implementation files('libs/libmis.jar')
+
+    implementation(name: 'android-admanager-master-v1.0', ext: 'aar')
+    implementation(name: 'android-baserecyle-master-v1.1', ext: 'aar')
+    implementation(name: 'android-popuplist-master-v1.1', ext: 'aar')
+    implementation(name: 'android-ninekeyboard-master-v3.1', ext: 'aar')
+
+    compileOnly files('external/sdk.jar')
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://maven.java.net/content/groups/public/"
+        }
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'aar'
+    }
+}
+
+import java.text.SimpleDateFormat
+
+def getDate(String dateFormat) {
+    def df = new SimpleDateFormat(dateFormat)
+    Calendar c = Calendar.getInstance();
+    TimeZone tz = c.getTimeZone();
+    df.setTimeZone(tz)
+    return df.format(new Date())
+}
+def getLongDate() {
+    return getDate("yyMMddHHss")
+}
+def getShortDate() {
+    return getDate("yyMMdd")
+}
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.0."+getShortDate()
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+    packagingOptions {
+        pickFirst 'META-INF/LICENSE.txt' // picks the JavaMail license file
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        //instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/r_dialog"
+    android:background="#86222222"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:id="@+id/layout_rl_close"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:onClick="close_second_menu"
+                android:layout_width="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/home2_close_menu"
+                android:layout_height="60dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/layout_rl_close"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            android:layout_height="wrap_content">
+            <GridView
+                android:paddingTop="30dp"
+                android:id="@+id/second_menu_gv"
+                android:layout_marginLeft="10dp"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,423 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.android.newpos.pay"
+4    android:versionCode="2"
+5    android:versionName="1.0.210413" > <!-- TODO make this not required again after android.hardware.camera.any is available -->
+6    <uses-sdk
+7        android:minSdkVersion="19"
+7-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml
+8        android:targetSdkVersion="28" />
+8-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml
+9
+10    <supports-screens
+10-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:5:5-10:39
+11        android:anyDensity="true"
+11-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:6:9-34
+12        android:largeScreens="true"
+12-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:7:9-36
+13        android:normalScreens="true"
+13-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:8:9-37
+14        android:resizeable="true"
+14-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:9:9-34
+15        android:smallScreens="true" />
+15-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:10:9-36
+16
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:167:5-78
+17-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:167:22-76
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:169:5-67
+18-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:169:22-64
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:170:5-75
+19-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:170:22-73
+20    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+20-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:171:5-75
+20-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:171:22-73
+21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+21-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:172:5-74
+21-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:172:22-72
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:173:5-79
+22-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:173:22-77
+23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+23-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:174:5-80
+23-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:174:22-78
+24    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+24-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:175:5-77
+24-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:175:22-75
+25    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+25-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:176:5-80
+25-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:176:22-77
+26    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+26-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:177:5-72
+26-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:177:22-70
+27    <uses-permission android:name="android.permission.CAMERA" />
+27-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:178:5-64
+27-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:178:22-62
+28    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+29    <uses-feature
+29-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:180:5-182:36
+30        android:name="android.hardware.camera"
+30-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:181:9-47
+31        android:required="false" />
+31-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:182:9-33
+32    <uses-feature
+32-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:183:5-185:36
+33        android:name="android.hardware.camera.front"
+33-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:184:9-53
+34        android:required="false" />
+34-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:185:9-33
+35    <!-- TODO replace above two with next line after Android 4.launcher_simple_en -->
+36    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+37    <uses-feature
+37-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:188:5-190:36
+38        android:name="android.hardware.camera.autofocus"
+38-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:189:9-57
+39        android:required="false" />
+39-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:190:9-33
+40    <uses-feature
+40-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:191:5-193:36
+41        android:name="android.hardware.camera.flash"
+41-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:192:9-53
+42        android:required="false" />
+42-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:193:9-33
+43    <uses-feature android:name="android.hardware.screen.landscape" />
+43-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:194:5-70
+43-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:194:19-67
+44    <uses-feature
+44-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:195:5-197:36
+45        android:name="android.hardware.wifi"
+45-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:196:9-45
+46        android:required="false" />
+46-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:197:9-33
+47    <!-- This excludes Google TV, which is unfortunately included by virtue of not requiring a camera -->
+48    <uses-feature android:name="android.hardware.touchscreen" />
+48-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:199:5-65
+48-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:199:19-62
+49
+50    <application
+50-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:12:5-165:19
+51        android:name="cn.desert.newpos.payui.base.PayApplication"
+51-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:13:9-66
+52        android:allowBackup="true"
+52-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:14:9-35
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\db9bbe28748a6582e21ecd4c8d81b114\core-1.6.0-alpha01\AndroidManifest.xml:24:18-86
+54        android:configChanges="orientation|screenSize|locale|mcc|mnc"
+54-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:16:9-70
+55        android:debuggable="true"
+56        android:fullBackupContent="false"
+56-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:15:9-42
+57        android:icon="@drawable/ic_launcher"
+57-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:17:9-45
+58        android:label="@string/app_name"
+58-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:18:9-41
+59        android:theme="@style/AppTheme" >
+59-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:19:9-40
+60        <uses-library
+60-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:21:9-24:24
+61            android:name="com.pos.device"
+61-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:22:13-42
+62            android:required="true" >
+62-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:23:13-36
+63        </uses-library>
+64
+65        <activity
+65-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:26:9-37:20
+66            android:name="cn.desert.newpos.payui.splash.Welcome"
+66-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:27:13-65
+67            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+67-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:30:13-74
+68            android:launchMode="singleTask"
+68-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:31:13-44
+69            android:screenOrientation="portrait"
+69-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:29:13-49
+70            android:theme="@style/AppTheme.YOUZI"
+70-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:28:13-50
+71            android:windowSoftInputMode="stateHidden|adjustResize" >
+71-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:32:13-67
+72            <intent-filter>
+72-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:33:13-36:29
+73                <action android:name="android.intent.action.MAIN" />
+73-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:34:17-68
+73-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:34:25-66
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:35:17-76
+75-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:35:27-74
+76            </intent-filter>
+77        </activity>
+78        <activity
+78-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:39:9-52:20
+79            android:name="com.android.newpos.pay.HomeActivity"
+79-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:40:13-41
+80            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+80-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:44:13-74
+81            android:launchMode="singleTask"
+81-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:42:13-44
+82            android:screenOrientation="portrait"
+82-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:45:13-49
+83            android:theme="@style/AppTheme.WUZI"
+83-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:41:13-49
+84            android:windowSoftInputMode="stateHidden|adjustResize" >
+84-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:43:13-67
+85            <intent-filter>
+85-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:46:13-51:29
+86                <action android:name="android.intent.action.MAIN" />
+86-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:34:17-68
+86-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:34:25-66
+87
+88                <category android:name="android.intent.category.DEFAULT" />
+88-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:48:17-76
+88-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:48:27-73
+89                <!-- <category android:name="android.intent.category.HOME" /> -->
+90                <!-- <category android:name="android.intent.category.MONKEY" /> -->
+91            </intent-filter>
+92        </activity>
+93        <activity
+93-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:54:8-60:69
+94            android:name="cn.desert.newpos.payui.master.MasterControl"
+94-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:55:13-71
+95            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+95-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:58:13-74
+96            android:launchMode="singleTask"
+96-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:59:13-44
+97            android:screenOrientation="portrait"
+97-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:57:13-49
+98            android:theme="@style/AppTheme.WUZI"
+98-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:56:13-49
+99            android:windowSoftInputMode="stateHidden|adjustResize" />
+99-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:60:13-67
+100        <activity
+100-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:62:9-67:94
+101            android:name="cn.desert.newpos.payui.master.ResultControl"
+101-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:63:13-71
+102            android:configChanges="mcc|mnc|orientation|screenSize|keyboard|layoutDirection"
+102-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:67:13-92
+103            android:launchMode="singleTask"
+103-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:64:13-44
+104            android:screenOrientation="portrait"
+104-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:65:13-49
+105            android:windowSoftInputMode="stateHidden" />
+105-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:66:13-54
+106.
+107        <activity
+107-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:69:9-76:69
+108            android:name="cn.desert.newpos.payui.setting.ui.SettingsFrags"
+108-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:70:13-75
+109            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+109-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:75:13-74
+110            android:exported="true"
+110-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:71:13-36
+111            android:launchMode="singleTask"
+111-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:74:13-44
+112            android:screenOrientation="portrait"
+112-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:73:13-49
+113            android:theme="@style/AppTheme.WUZI"
+113-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:72:13-49
+114            android:windowSoftInputMode="stateHidden|adjustResize" />
+114-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:76:13-67
+115        <activity
+115-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:77:9-84:20
+116            android:name="cn.desert.newpos.payui.transrecord.HistoryTrans"
+116-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:78:13-75
+117            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+117-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:82:13-74
+118            android:launchMode="singleTask"
+118-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:81:13-44
+119            android:screenOrientation="portrait"
+119-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:80:13-49
+120            android:theme="@style/AppTheme.WUZI"
+120-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:79:13-49
+121            android:windowSoftInputMode="stateHidden|adjustResize" >
+121-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:83:13-67
+122        </activity>
+123        <activity
+123-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:86:9-90:52
+124            android:name="cn.desert.newpos.payui.transrecord.HistoryDetail"
+124-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:87:13-76
+125            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+125-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:89:13-74
+126            android:launchMode="singleTask"
+126-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:88:13-44
+127            android:theme="@style/AppTheme.WUZI" />
+127-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:90:13-49
+128        <activity
+128-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:92:9-96:52
+129            android:name="cn.desert.newpos.payui.transrecord.PrintLastTrans"
+129-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:93:13-77
+130            android:configChanges="orientation|screenSize|locale|mcc|mnc"
+130-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:95:13-74
+131            android:launchMode="singleTask"
+131-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:94:13-44
+132            android:theme="@style/AppTheme.WUZI" />
+132-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:96:13-49
+133
+134        <receiver android:name="cn.desert.newpos.payui.base.LocaleChangeReceiver" >
+134-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:98:9-103:20
+134-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:99:13-76
+135            <intent-filter>
+135-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:100:13-102:29
+136                <action android:name="android.intent.action.LOCALE_CHANGED" />
+136-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:101:17-78
+136-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:101:25-76
+137            </intent-filter>
+138        </receiver>
+139
+140        <service
+140-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:105:9-110:19
+141            android:name="com.android.newpos.mis.service.MisService"
+141-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:105:18-74
+142            android:exported="true" >
+142-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:106:13-36
+143            <intent-filter android:priority="1000" >
+143-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:107:13-109:29
+143-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:107:28-51
+144                <action android:name="android.intent.action.NEWPOS_MIS" />
+144-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:108:17-74
+144-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:108:25-72
+145            </intent-filter>
+146        </service>
+147
+148        <activity android:name="cn.desert.newpos.payui.setting.ui.classical.TransparaFrags" />
+148-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:112:9-94
+148-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:112:19-92
+149        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.CommunSettings" />
+149-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:113:9-91
+149-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:113:19-89
+150        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.KeysSettings" />
+150-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:114:9-89
+150-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:114:19-87
+151        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.TransSetting" />
+151-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:115:9-89
+151-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:115:19-87
+152        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.PrivateSettings" />
+152-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:116:9-92
+152-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:116:19-90
+153        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.FeedbackSettings" />
+153-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:117:9-93
+153-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:117:19-91
+154        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.ErrlogSettings" />
+154-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:118:9-91
+154-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:118:19-89
+155        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.transson.TransMerchantSetting" />
+155-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:119:9-106
+155-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:119:19-104
+156        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.transson.TransSysSetting" />
+156-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:120:9-101
+156-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:120:19-99
+157        <activity android:name="cn.desert.newpos.payui.setting.ui.simple.transson.TransScanSetting" />
+157-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:121:9-102
+157-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:121:19-100
+158        <activity
+158-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:124:9-125:38
+159            android:name="com.android.newpos.payapi.RSaleActivity"
+159-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:124:19-73
+160            android:exported="true" />
+160-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:125:13-36
+161        <activity
+161-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:126:9-127:38
+162            android:name="com.android.newpos.payapi.RVoidActivity"
+162-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:126:19-73
+163            android:exported="true" />
+163-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:127:13-36
+164        <activity
+164-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:128:9-129:38
+165            android:name="com.android.newpos.payapi.RRefundActivity"
+165-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:128:19-75
+166            android:exported="true" />
+166-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:129:13-36
+167        <activity
+167-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:131:9-132:38
+168            android:name="com.android.newpos.payapi.RScanPayActivity"
+168-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:131:19-76
+169            android:exported="true" />
+169-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:132:13-36
+170        <activity
+170-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:133:9-134:38
+171            android:name="com.android.newpos.payapi.RScanVoidActivity"
+171-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:133:19-77
+172            android:exported="true" />
+172-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:134:13-36
+173        <activity
+173-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:135:9-136:38
+174            android:name="com.android.newpos.payapi.RScanRefundActivity"
+174-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:135:19-79
+175            android:exported="true" />
+175-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:136:13-36
+176        <activity
+176-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:138:9-139:38
+177            android:name="com.android.newpos.payapi.RPreActivity"
+177-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:138:19-72
+178            android:exported="true" />
+178-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:139:13-36
+179        <activity
+179-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:140:9-141:38
+180            android:name="com.android.newpos.payapi.RPreVoidActivity"
+180-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:140:19-76
+181            android:exported="true" />
+181-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:141:13-36
+182        <activity
+182-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:142:9-143:38
+183            android:name="com.android.newpos.payapi.RPreCompActivity"
+183-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:142:19-76
+184            android:exported="true" />
+184-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:143:13-36
+185        <activity
+185-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:144:9-145:38
+186            android:name="com.android.newpos.payapi.RCompVoidActivity"
+186-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:144:19-77
+187            android:exported="true" />
+187-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:145:13-36
+188        <activity
+188-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:147:9-148:38
+189            android:name="com.android.newpos.payapi.RQueryDetailsActivity"
+189-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:147:19-81
+190            android:exported="true" />
+190-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:148:13-36
+191        <activity
+191-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:149:9-150:38
+192            android:name="com.android.newpos.payapi.RReprintLastActivity"
+192-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:149:19-80
+193            android:exported="true" />
+193-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:150:13-36
+194        <activity
+194-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:151:9-152:38
+195            android:name="com.android.newpos.payapi.RPrintDetailsActivity"
+195-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:151:19-81
+196            android:exported="true" />
+196-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:152:13-36
+197        <activity
+197-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:154:9-155:38
+198            android:name="com.android.newpos.payapi.RLoginActivity"
+198-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:154:19-74
+199            android:exported="true" />
+199-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:155:13-36
+200        <activity
+200-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:156:9-157:38
+201            android:name="com.android.newpos.payapi.RDownParaActivity"
+201-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:156:19-77
+202            android:exported="true" />
+202-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:157:13-36
+203        <activity
+203-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:158:9-159:38
+204            android:name="com.android.newpos.payapi.RSettleActivity"
+204-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:158:19-75
+205            android:exported="true" />
+205-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:159:13-36
+206        <activity
+206-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:161:9-162:38
+207            android:name="com.android.newpos.payapi.RBalanceActivity"
+207-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:161:19-76
+208            android:exported="true" />
+208-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:162:13-36
+209        <activity
+209-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:163:9-164:38
+210            android:name="com.android.newpos.payapi.RECBalanceActivity"
+210-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:163:19-78
+211            android:exported="true" />
+211-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:164:13-36
+212    </application>
+213
+214</manifest>

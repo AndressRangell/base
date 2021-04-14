@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/second_menu_item_iv"
+        android:src="@drawable/home2_scan_sale"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/second_menu_item_tv"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="扫码消费"
+        android:textSize="14sp"
+        android:textColor="#ff333333"
+        android:layout_width="60dp"
+        android:layout_height="40dp" />
+</LinearLayout>

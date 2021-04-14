@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        layout="@layout/welcome_whats_title"/>
+    <TextView
+        android:text="@string/launcher_style"
+        android:id="@+id/welcome_4_tv"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#48495F"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@+id/welcome_4_tv"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/welcome_4_class_iv"
+                android:src="@drawable/launcher_classical"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp" />
+            <RadioButton
+                android:id="@+id/welcome_4_classical"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/classical_launcher"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/welcome_4_simple_iv"
+                android:src="@drawable/launcher_simple"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp" />
+            <RadioButton
+                android:id="@+id/welcome_4_simple"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/simple_launcher"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

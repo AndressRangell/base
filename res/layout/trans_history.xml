@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trans_history_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/lightgray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/history_search_layout"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/gray"
+            android:hint="@string/please_input_traceno_hint"
+            android:id="@+id/history_search_edit"
+            android:inputType="number"
+            android:background="@drawable/edit_text_selector"
+            android:maxLength="6"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit_text_selector"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_search"
+            android:id="@+id/history_search_bt"/>
+
+    </LinearLayout>
+
+
+    <cn.desert.newpos.payui.transrecord.PaginationListView
+        android:id="@+id/history_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/list_nodiv"/>
+    <include
+        android:id="@+id/history_nodata"
+        layout="@layout/view_nodata" />
+</LinearLayout>

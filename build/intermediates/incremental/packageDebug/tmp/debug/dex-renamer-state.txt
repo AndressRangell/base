@@ -1,0 +1,4 @@
+#Tue Apr 13 16:29:52 COT 2021
+base.0=C\:\\Users\\WPOSS BGA 634K\\Documents\\Rongpay_Octubre_2020\\Rongpay_Octubre_2020\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

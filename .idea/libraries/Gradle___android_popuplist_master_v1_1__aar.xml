@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: :android-popuplist-master-v1.1:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d833d322052a46caf9433faca04bc506/jetified-android-popuplist-master-v1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d833d322052a46caf9433faca04bc506/jetified-android-popuplist-master-v1.1/jars/libs/constraint-layout-solver-1.0.2.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d833d322052a46caf9433faca04bc506/jetified-android-popuplist-master-v1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d833d322052a46caf9433faca04bc506/jetified-android-popuplist-master-v1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/facf9b44782d0ef271b3ee0b7268697c/jetified-android-popuplist-master-v1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/facf9b44782d0ef271b3ee0b7268697c/jetified-android-popuplist-master-v1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/facf9b44782d0ef271b3ee0b7268697c/jetified-android-popuplist-master-v1.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/facf9b44782d0ef271b3ee0b7268697c/jetified-android-popuplist-master-v1.1/jars/libs/constraint-layout-solver-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

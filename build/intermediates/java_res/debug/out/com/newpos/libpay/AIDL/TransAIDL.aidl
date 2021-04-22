@@ -1,12 +1,12 @@
 // TransAIDL.aidl
 package com.newpos.libpay.AIDL;
 
-// Declare any non-default types here with import statements
+// Declare aquí cualquier tipo no predeterminado con declaraciones de importación
 
 interface TransAIDL {
     /**
-     * Demonstrates some basic types that you can use as parameters
-     * and return values in AIDL.
+     * Demuestra algunos tipos básicos que puede usar como parámetros.
+     * y devuelve valores en AIDL.
      */
 //    void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat,
 //            double aDouble, String aString);

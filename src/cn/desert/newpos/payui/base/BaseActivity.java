@@ -53,6 +53,10 @@ public class BaseActivity extends FragmentActivity {
 		PayApplication.getInstance().addActivity(this);
 	}
 
+	/**
+	 * método para inflar una vista Linear Layout referenciada por ID,
+	 * @param layoutResID recibimos el ID de referencia de la vista que se va a inflar
+	 */
 	@Override
 	public void setContentView(int layoutResID) {
 		View content = LayoutInflater.from(this).inflate(layoutResID, null);
@@ -71,6 +75,10 @@ public class BaseActivity extends FragmentActivity {
 		super.setContentView(mActivityLayout);
 	}
 
+	/**
+	 * método para inflar una vista Linear Layout
+	 * @param view recibimos la vista que se va a inflar
+	 */
 	@Override
 	public void setContentView(View view) {
 		if (mActivityLayout != null) {
@@ -88,6 +96,11 @@ public class BaseActivity extends FragmentActivity {
 		super.setContentView(mActivityLayout);
 	}
 
+	/**
+	 *método para confirmar si se presiona la tecla back
+	 * @param event se recibe la llave de la tecla que se presiona
+	 * @return retorna true: si dicha tecla return está bloqueada; false: si está activa
+	 */
 	@SuppressLint("RestrictedApi")
 	@Override
 	public boolean dispatchKeyEvent(KeyEvent event) {
@@ -103,11 +116,19 @@ public class BaseActivity extends FragmentActivity {
 		return super.dispatchKeyEvent(event);
 	}
 
+	/**
+	 * método para capturar datos de eventos de movimiento como mouse, bolígrafo, dedo, trackball
+	 * @param ev evento de movimiento
+	 * @return boolean
+	 */
 	@Override
 	public boolean dispatchTouchEvent(MotionEvent ev) {
 		return super.dispatchTouchEvent(ev);
 	}
 
+	/**
+	 *
+	 */
 	private void initNavigationByConfig() {
 		NavigationConfig navigationConfig = getClass().getAnnotation(NavigationConfig.class);
 		if (navigationConfig != null) {
@@ -125,10 +146,18 @@ public class BaseActivity extends FragmentActivity {
 		}
 	}
 
+	/**
+	 * método para escuchar evento de click derecho
+	 * @param listener oyente de click
+	 */
 	protected void setRightClickListener(OnClickListener listener){
 		mDefaultTopNavigation.setOnRightIconClickListener(listener);
 	}
 
+	/**
+	 * método para establecer texto a la derecha
+	 * @param rid id del texto registrado en values.string
+	 */
 	protected void setRightText(int rid){
 		mDefaultTopNavigation.setRightContent(rid);
 	}
@@ -171,11 +200,14 @@ public class BaseActivity extends FragmentActivity {
 		mDefaultTopNavigation.setTitle(str);
 	}
 
-	//Add by Andy Yuan
+	//añadido por Andy Yuan
 	protected void setNaviTitle(String str, int color) {
 		mDefaultTopNavigation.setTitle(str,color);
 	}
 
+	/**
+	 * clase heredada de CountDownTimer para llevar una cuenta regresiva para alguna animacion o vista
+	 */
 	private final class CDT extends CountDownTimer{
 
 		public CDT(long millisInFuture, long countDownInterval) {
@@ -200,6 +232,10 @@ public class BaseActivity extends FragmentActivity {
 		}
 	}
 
+	/**
+	 * metodo para iniciar un temporizador
+	 * @param s numero de segundos para el temporizador
+	 */
 	protected void startTimer(int s){
 		mDefaultTopNavigation.setTime("");
 		mDefaultTopNavigation.setTimeVisible(View.VISIBLE);
@@ -210,6 +246,9 @@ public class BaseActivity extends FragmentActivity {
 		cdt.start();
 	}
 
+	/**
+	 * método para detener el temporizador
+	 */
 	protected void stopTimer(){
 		if(cdt!=null) {
 			cdt.cancel();
@@ -218,6 +257,10 @@ public class BaseActivity extends FragmentActivity {
 		mDefaultTopNavigation.setTimeVisible(View.GONE);
 	}
 
+	/**
+	 * método para reiniciar el temporizador pasandole de nuevo la cantidad de segundos
+	 * @param s numero de segundos para el temporizador
+	 */
 	protected void refreashTimer(int s){
 		mDefaultTopNavigation.setTime("");
 		mDefaultTopNavigation.setTimeVisible(View.VISIBLE);

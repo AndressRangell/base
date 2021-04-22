@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.newpos.pay"
     android:versionCode="2"
-    android:versionName="1.0.210413" > <!-- TODO make this not required again after android.hardware.camera.any is available -->
+    android:versionName="1.0.210422" > <!-- TODO make this not required again after android.hardware.camera.any is available -->
     <uses-sdk
         android:minSdkVersion="19"
         android:targetSdkVersion="28" />

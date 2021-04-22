@@ -48,6 +48,9 @@ public class ErrlogSettings extends BaseActivity {
         initData();
     }
 
+    /**
+     * método para inicializar el mensaje de error de configuración
+     */
     private void initData(){
         noData = (RelativeLayout) findViewById(R.id.errlog_no_data_layout);
         hasData = (LinearLayout) findViewById(R.id.errlog_has_data_layout);
@@ -63,6 +66,9 @@ public class ErrlogSettings extends BaseActivity {
         }
     }
 
+    /**
+     * método para limpiar el mensaje de error de configuracion
+     */
     private void clear(){
         File file = new File(TMConfig.getRootFilePath()+"errlog/");
         if(file.exists()){
@@ -76,6 +82,10 @@ public class ErrlogSettings extends BaseActivity {
         }
     }
 
+    /**
+     * método para verificar si el archivo de errores tiene datos almacenados
+     * @return true: si tiene datos; false: si está vacío
+     */
     private boolean hasData(){
         File file = new File(TMConfig.getRootFilePath()+"errlog/");
         if(file.exists() && file.isDirectory()) {
@@ -87,6 +97,9 @@ public class ErrlogSettings extends BaseActivity {
         return false ;
     }
 
+    /**
+     * método para cargar los datos del archivo de error y enviarlo a un adaptador
+     */
     private void loadData(){
         File file = new File(TMConfig.getRootFilePath()+"errlog/");
         ArrayAdapter adapter = new ArrayAdapter(this , android.R.layout.simple_spinner_dropdown_item , file.list());
@@ -105,6 +118,12 @@ public class ErrlogSettings extends BaseActivity {
             }
         });
     }
+
+    /**
+     * método para leer un archivo específico
+     * @param filename nombre del archivo que queremos leer
+     * @return null: si el archivo no existe;
+     */
     private String readSingleLog(String filename){
         String result = "";
         String apkPathString = TMConfig.getRootFilePath()+"errlog/";

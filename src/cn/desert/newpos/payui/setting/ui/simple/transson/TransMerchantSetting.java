@@ -36,6 +36,9 @@ public class TransMerchantSetting extends BaseActivity {
         });
     }
 
+    /**
+     * método para inicializar los datos de la vista merchant
+     */
     private void initData(){
         merchant_mid = (EditText) findViewById(R.id.merchant_merid);
         merchant_tid = (EditText) findViewById(R.id.merchant_tid);
@@ -45,6 +48,9 @@ public class TransMerchantSetting extends BaseActivity {
         merchant_mid.setText(config.getMerchID());
     }
 
+    /**
+     * método para guardar la información que está almacenada en la vista merchant
+     */
     private void save(){
         String mid = merchant_mid.getText().toString();
         String tid = merchant_tid.getText().toString();

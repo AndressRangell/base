@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.android.newpos.pay"
 4    android:versionCode="2"
-5    android:versionName="1.0.210413" > <!-- TODO make this not required again after android.hardware.camera.any is available -->
+5    android:versionName="1.0.210422" > <!-- TODO make this not required again after android.hardware.camera.any is available -->
 6    <uses-sdk
 7        android:minSdkVersion="19"
 7-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml
@@ -103,7 +103,7 @@
 52        android:allowBackup="true"
 52-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:14:9-35
 53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-53-->[androidx.core:core:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\db9bbe28748a6582e21ecd4c8d81b114\core-1.6.0-alpha01\AndroidManifest.xml:24:18-86
+53-->[androidx.core:core:1.6.0-alpha02] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\9b82ca62b1f4bfa44bf0d9a9684f661e\core-1.6.0-alpha02\AndroidManifest.xml:24:18-86
 54        android:configChanges="orientation|screenSize|locale|mcc|mnc"
 54-->C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:16:9-70
 55        android:debuggable="true"

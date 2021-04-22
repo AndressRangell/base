@@ -48,6 +48,9 @@ public class CommunFrags implements View.OnClickListener{
         readHistory();
     }
 
+    /**
+     * método para leer el historial con un temporizador para ocultarlo
+     */
     private void readHistory(){
         pubIpEdit.setIPText(getIPArray(TMConfig.getInstance().getIp()));
         pubPorEdit.setText(TMConfig.getInstance().getPort());
@@ -60,6 +63,11 @@ public class CommunFrags implements View.OnClickListener{
         spinner.setSelection((TMConfig.getInstance().getTimeout()/1000/30)-1);
     }
 
+    /**
+     * método para obtener la ip del equipo
+     * @param ip cadena con la ip
+     * @return retorna un array de String
+     */
     private String[] getIPArray(String ip){
         String[] iparray = new String[4] ;
         iparray[0] = ip.substring(0 , ip.indexOf(".") ) ;
@@ -78,6 +86,9 @@ public class CommunFrags implements View.OnClickListener{
         }
     }
 
+    /**
+     * método para guardar el registro de la ip
+     */
     private void save(){
         String ip = pubIpEdit.getIPText() ;
         String port = pubPorEdit.getText().toString() ;

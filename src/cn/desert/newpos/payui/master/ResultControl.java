@@ -79,6 +79,11 @@ public class ResultControl extends BaseActivity {
         finish();
     }
 
+    /**
+     * método para mostrar un mensaje de respuesta con una imagen
+     * @param flag true: muestra imagen exitosa; false: muestra imagen fallida
+     * @param info
+     */
     private void displayDetails(boolean flag , String info){
         this.info = info ;
         details.setText(info);

@@ -59,6 +59,9 @@ public class TransparaFrags extends Activity{
         }
     }
 
+    /**
+     * método para inicializar o activar las vistas emergentes
+     */
     private void initPopupViews() {
         popupViews.add(metchant);
         popupViews.add(trans);
@@ -70,12 +73,19 @@ public class TransparaFrags extends Activity{
         popupListView.setItemViews(popupViews);
     }
 
+    /**
+     * método para ocultar o reducir las vistar emergentes
+     * @param v
+     */
     public void setting_return(View v){
         if (popupListView.isItemZoomIn()) {
             popupListView.zoomOut();
         }
     }
 
+    /**
+     * método para cargas las vistas metchant, trans, master, password, carduse, scanner
+     */
     private void loadViews(){
        metchant = new PopupView(mContext , R.layout.setting_frag_trans_poplist_head){
             @Override
@@ -204,6 +214,10 @@ public class TransparaFrags extends Activity{
         };
     }
 
+    /**
+     * método para leer los datos de la vista merchant
+     * @param v
+     */
     private void readMerchantInfo(View v){
         final EditText merid = (EditText) v.findViewById(R.id.setting_merchant_merid);
         final EditText mername = (EditText) v.findViewById(R.id.setting_merchant_mername);
@@ -230,6 +244,10 @@ public class TransparaFrags extends Activity{
         });
     }
 
+    /**
+     * método para leer los datos de la vista trans
+     * @param v
+     */
     private void readTransInfo(View v){
         final EditText traceEdit = (EditText) v.findViewById(R.id.setting_trans_trace_edit);
         final Spinner printSp = (Spinner) v.findViewById(R.id.setting_trans_print_spinner);
@@ -286,6 +304,10 @@ public class TransparaFrags extends Activity{
         });
     }
 
+    /**
+     * método para leer los datos de la vista master
+     * @param v
+     */
     private void readMasterInfo(View v){
         final EditText oldEdot = (EditText) v.findViewById(R.id.setting_master_oldpwd_edit);
         final EditText newEdit = (EditText) v.findViewById(R.id.setting_master_newpwd_edit);
@@ -308,6 +330,10 @@ public class TransparaFrags extends Activity{
         });
     }
 
+    /**
+     * método para leer los datos de la vista password
+     * @param v
+     */
     private void readPasswordSwitch(View v){
         final Spinner spinner = (Spinner) v.findViewById(R.id.setting_trans_input_pass_revocation);
         setAdaper(spinner , R.array.onoff);
@@ -321,6 +347,10 @@ public class TransparaFrags extends Activity{
         });
     }
 
+    /**
+     * método para leer los datos de la vista carduse
+     * @param v
+     */
     private void readCarduseSwitch(View v){
         final Spinner spinner = (Spinner) v.findViewById(R.id.setting_trans_input_pass_revocation);
         setAdaper(spinner , R.array.onoff);
@@ -334,6 +364,10 @@ public class TransparaFrags extends Activity{
         });
     }
 
+    /**
+     * método para leer los datos de la vista scanner
+     * @param v
+     */
     private void scannerSwitch(View v){
         final Spinner beep = (Spinner) v.findViewById(R.id.setting_trans_scanner_beep);
         setAdaper(beep , R.array.onoff);

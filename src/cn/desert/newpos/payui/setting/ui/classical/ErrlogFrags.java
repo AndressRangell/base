@@ -30,6 +30,12 @@ public class ErrlogFrags {
     private TextView content ;
     private ScrollView scrollView ;
 
+    /**
+     * fragmento de registro de errores
+     * @param a
+     * @param l
+     * @param title
+     */
     public ErrlogFrags(Context a , RelativeLayout l , String title){
         this.mContext = a ;
         this.rLayout = l ;
@@ -42,6 +48,9 @@ public class ErrlogFrags {
         readErrlogs();
     }
 
+    /**
+     * método para mostrar si el dispositivo tuvo algún error al recibir los datos
+     */
     private void readErrlogs(){
         File file = new File(TMConfig.getRootFilePath()+"errlog/");
         if(file.exists() && file.isDirectory()){

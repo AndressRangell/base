@@ -54,6 +54,9 @@ public class KeysSettings extends BaseActivity {
         index.setText(String.valueOf(config.getMasterKeyIndex()));
     }
 
+    /**
+     * método para guardar los datos de la configuración de las utilidades de pago
+     */
     private void save(){
         String idx = index.getText().toString();
         String data = keys.getText().toString();

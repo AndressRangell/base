@@ -40,6 +40,12 @@ public class PrivacyFrags implements View.OnClickListener{
 
     private TMConfig tmConfig = null ;
 
+    /**
+     * fragmentos de privacidad
+     * @param a
+     * @param l
+     * @param title
+     */
     public PrivacyFrags(Activity a , RelativeLayout l , String title){
         this.mActivity = a ;
         this.rLayout = l ;

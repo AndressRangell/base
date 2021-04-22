@@ -2,7 +2,7 @@
  * This file is auto-generated.  DO NOT MODIFY.
  */
 package com.newpos.libpay.AIDL;
-// Declare any non-default types here with import statements
+// Declare aquí cualquier tipo no predeterminado con declaraciones de importación
 
 public interface TransAIDL extends android.os.IInterface
 {
@@ -10,8 +10,8 @@ public interface TransAIDL extends android.os.IInterface
   public static class Default implements com.newpos.libpay.AIDL.TransAIDL
   {
     /**
-         * Demonstrates some basic types that you can use as parameters
-         * and return values in AIDL.
+         * Demuestra algunos tipos básicos que puede usar como parámetros.
+         * y devuelve valores en AIDL.
          *///    void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat,
     //            double aDouble, String aString);
 
@@ -122,8 +122,8 @@ public interface TransAIDL extends android.os.IInterface
         return DESCRIPTOR;
       }
       /**
-           * Demonstrates some basic types that you can use as parameters
-           * and return values in AIDL.
+           * Demuestra algunos tipos básicos que puede usar como parámetros.
+           * y devuelve valores en AIDL.
            *///    void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat,
       //            double aDouble, String aString);
 
@@ -207,8 +207,8 @@ public interface TransAIDL extends android.os.IInterface
     }
   }
   /**
-       * Demonstrates some basic types that you can use as parameters
-       * and return values in AIDL.
+       * Demuestra algunos tipos básicos que puede usar como parámetros.
+       * y devuelve valores en AIDL.
        *///    void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat,
   //            double aDouble, String aString);
 

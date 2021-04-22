@@ -39,6 +39,9 @@ public class TransScanSetting extends BaseActivity {
         });
     }
 
+    /**
+     * método para modificar configuración en la vista merchant
+     */
     private void initData(){
         beep = (ImageView) findViewById(R.id.scan_beep);
         light = (ImageView) findViewById(R.id.scan_light);
@@ -66,6 +69,10 @@ public class TransScanSetting extends BaseActivity {
         });
     }
 
+    /**
+     * método para cambiar el estado del interruptor de pitido (activo:inactivo)
+     * @param is
+     */
     public void setBeepSwitch(boolean is){
         isBeep = is ;
         if(is){
@@ -75,6 +82,10 @@ public class TransScanSetting extends BaseActivity {
         }
     }
 
+    /**
+     * método para cambiar el estado del interruptor de luz (activo:inactivo)
+     * @param is
+     */
     public void setLightSwitch(boolean is){
         isLight = is ;
         if(is){
@@ -84,6 +95,10 @@ public class TransScanSetting extends BaseActivity {
         }
     }
 
+    /**
+     * método para cambiar el estado del interruptor de luz (activo:inactivo)
+     * @param isback
+     */
     public void setCameraSwitch(boolean isback){
         isBack = isback ;
         if(isback){

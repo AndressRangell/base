@@ -49,6 +49,9 @@ public class PrivateSettings extends BaseActivity {
         });
     }
 
+    /**
+     *
+     */
     private void initData(){
         online_offline = (Button) findViewById(R.id.pri_online_offlne);
         debug_nodebug = (ImageView) findViewById(R.id.pri_debug_nodebug);

@@ -9,10 +9,10 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\WPOSS BGA 634K\.g
 MERGED from [androidx.recyclerview:recyclerview:1.2.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\7bcdb19642a16e87dfa776fef127d9ab\recyclerview-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\7229c37a839ee1ba9ea0af674d9b721c\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [:android-admanager-master-v1.0:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\3974a3a7f797eb8be80137ba9b20c5db\jetified-android-admanager-master-v1.0\AndroidManifest.xml:2:1-11:12
-MERGED from [:android-baserecyle-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\8855aa709fdbfa71f9b3a32bf93cda5c\jetified-android-baserecyle-master-v1.1\AndroidManifest.xml:2:1-11:12
-MERGED from [:android-popuplist-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\facf9b44782d0ef271b3ee0b7268697c\jetified-android-popuplist-master-v1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [:android-baserecyle-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\f02a0c6e3e5bb953adab496fb59a2fce\jetified-android-baserecyle-master-v1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [:android-popuplist-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\b72ad7d5ef93e169f757f1d400e60735\jetified-android-popuplist-master-v1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [:android-ninekeyboard-master-v3.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\51ec1c23c64a85c0d4f56a3c932c8a68\jetified-android-ninekeyboard-master-v3.1\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.core:core-ktx:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\ff936a5106ec87a64c16e4d0548ca214\jetified-core-ktx-1.6.0-alpha01\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.core:core-ktx:1.6.0-alpha02] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\12022308b38089c8f1266ded3ebd9a38\jetified-core-ktx-1.6.0-alpha02\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\433d3b1174c3260f870376c72eb4f935\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\2a0f5703ce14acf86bacd830cfd3553e\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\633b62ff6713384924e72bacd80becfa\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -30,7 +30,7 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\WPO
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\d4112f80c42e9eecf785f2785084e8d8\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\96e3d02c9c06589f9c47df12854cc931\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\c88d4c00ceb0db0999fe253ca4549e29\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\db9bbe28748a6582e21ecd4c8d81b114\core-1.6.0-alpha01\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.core:core:1.6.0-alpha02] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\9b82ca62b1f4bfa44bf0d9a9684f661e\core-1.6.0-alpha02\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\a5ecc09fc54d69c5cfcc39c63a6ff1b0\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\b0a4526dc6eda62a4a59b447da3e0748\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\19034ae1ea385e9b14fe393bc3b9cd9e\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -73,12 +73,12 @@ ADDED from C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubr
 		ADDED from C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:6:9-34
 application
 ADDED from C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:12:5-165:19
-MERGED from [androidx.core:core:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\db9bbe28748a6582e21ecd4c8d81b114\core-1.6.0-alpha01\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\db9bbe28748a6582e21ecd4c8d81b114\core-1.6.0-alpha01\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0-alpha02] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\9b82ca62b1f4bfa44bf0d9a9684f661e\core-1.6.0-alpha02\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0-alpha02] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\9b82ca62b1f4bfa44bf0d9a9684f661e\core-1.6.0-alpha02\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\a5ecc09fc54d69c5cfcc39c63a6ff1b0\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\a5ecc09fc54d69c5cfcc39c63a6ff1b0\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\db9bbe28748a6582e21ecd4c8d81b114\core-1.6.0-alpha01\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.6.0-alpha02] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\9b82ca62b1f4bfa44bf0d9a9684f661e\core-1.6.0-alpha02\AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from C:\Users\WPOSS BGA 634K\Documents\Rongpay_Octubre_2020\Rongpay_Octubre_2020\AndroidManifest.xml:18:9-41
 	android:fullBackupContent
@@ -487,14 +487,14 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\c
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\7229c37a839ee1ba9ea0af674d9b721c\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [:android-admanager-master-v1.0:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\3974a3a7f797eb8be80137ba9b20c5db\jetified-android-admanager-master-v1.0\AndroidManifest.xml:7:5-9:41
 MERGED from [:android-admanager-master-v1.0:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\3974a3a7f797eb8be80137ba9b20c5db\jetified-android-admanager-master-v1.0\AndroidManifest.xml:7:5-9:41
-MERGED from [:android-baserecyle-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\8855aa709fdbfa71f9b3a32bf93cda5c\jetified-android-baserecyle-master-v1.1\AndroidManifest.xml:7:5-9:41
-MERGED from [:android-baserecyle-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\8855aa709fdbfa71f9b3a32bf93cda5c\jetified-android-baserecyle-master-v1.1\AndroidManifest.xml:7:5-9:41
-MERGED from [:android-popuplist-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\facf9b44782d0ef271b3ee0b7268697c\jetified-android-popuplist-master-v1.1\AndroidManifest.xml:7:5-9:41
-MERGED from [:android-popuplist-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\facf9b44782d0ef271b3ee0b7268697c\jetified-android-popuplist-master-v1.1\AndroidManifest.xml:7:5-9:41
+MERGED from [:android-baserecyle-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\f02a0c6e3e5bb953adab496fb59a2fce\jetified-android-baserecyle-master-v1.1\AndroidManifest.xml:7:5-9:41
+MERGED from [:android-baserecyle-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\f02a0c6e3e5bb953adab496fb59a2fce\jetified-android-baserecyle-master-v1.1\AndroidManifest.xml:7:5-9:41
+MERGED from [:android-popuplist-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\b72ad7d5ef93e169f757f1d400e60735\jetified-android-popuplist-master-v1.1\AndroidManifest.xml:7:5-9:41
+MERGED from [:android-popuplist-master-v1.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\b72ad7d5ef93e169f757f1d400e60735\jetified-android-popuplist-master-v1.1\AndroidManifest.xml:7:5-9:41
 MERGED from [:android-ninekeyboard-master-v3.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\51ec1c23c64a85c0d4f56a3c932c8a68\jetified-android-ninekeyboard-master-v3.1\AndroidManifest.xml:7:5-9:41
 MERGED from [:android-ninekeyboard-master-v3.1:] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\51ec1c23c64a85c0d4f56a3c932c8a68\jetified-android-ninekeyboard-master-v3.1\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.core:core-ktx:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\ff936a5106ec87a64c16e4d0548ca214\jetified-core-ktx-1.6.0-alpha01\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\ff936a5106ec87a64c16e4d0548ca214\jetified-core-ktx-1.6.0-alpha01\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.6.0-alpha02] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\12022308b38089c8f1266ded3ebd9a38\jetified-core-ktx-1.6.0-alpha02\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.6.0-alpha02] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\12022308b38089c8f1266ded3ebd9a38\jetified-core-ktx-1.6.0-alpha02\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\433d3b1174c3260f870376c72eb4f935\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\433d3b1174c3260f870376c72eb4f935\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\2a0f5703ce14acf86bacd830cfd3553e\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -529,8 +529,8 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\WPOS
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\96e3d02c9c06589f9c47df12854cc931\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\c88d4c00ceb0db0999fe253ca4549e29\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\c88d4c00ceb0db0999fe253ca4549e29\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\db9bbe28748a6582e21ecd4c8d81b114\core-1.6.0-alpha01\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.6.0-alpha01] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\db9bbe28748a6582e21ecd4c8d81b114\core-1.6.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0-alpha02] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\9b82ca62b1f4bfa44bf0d9a9684f661e\core-1.6.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0-alpha02] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\9b82ca62b1f4bfa44bf0d9a9684f661e\core-1.6.0-alpha02\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\a5ecc09fc54d69c5cfcc39c63a6ff1b0\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\a5ecc09fc54d69c5cfcc39c63a6ff1b0\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\WPOSS BGA 634K\.gradle\caches\transforms-2\files-2.1\b0a4526dc6eda62a4a59b447da3e0748\documentfile-1.0.0\AndroidManifest.xml:20:5-44

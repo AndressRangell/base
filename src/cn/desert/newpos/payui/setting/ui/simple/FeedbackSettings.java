@@ -44,6 +44,9 @@ public class FeedbackSettings extends BaseActivity {
         });
     }
 
+    /**
+     * método para mostrar un cuadro de dialogo con una información correspondiente
+     */
     private void submit(){
         final String advice = content.getText().toString();
         if(PAYUtils.isNullWithTrim(advice)){

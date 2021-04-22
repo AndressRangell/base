@@ -251,6 +251,10 @@ public class MasterControl extends BaseActivity implements TransView, View.OnCli
         });
     }
 
+    /**
+     * método para iniciar una vista dependiendo del tipo de transaccion
+     * @param type se envía el tipo de transaccion
+     */
     private void startTrans(String type){
         try {
             PaySdk.getInstance().startTrans(type , this);
@@ -259,6 +263,11 @@ public class MasterControl extends BaseActivity implements TransView, View.OnCli
         }
     }
 
+    /**
+     * obtener el código del tipo de transaccion que estamos realizando
+     * @param name se envía el nombre de la transaccion como parametro
+     * @return
+     */
     public static String getTransType(String name){
         String[] list = PrintRes.TRANS ;
         int index = 0 ;
@@ -270,6 +279,10 @@ public class MasterControl extends BaseActivity implements TransView, View.OnCli
         return PrintRes.STANDRAD_TRANS_TYPE[index] ;
     }
 
+    /**
+     * método para cargar una gif de internet por medio de un en
+     * @param mode
+     */
     private void loadWebGif(int mode){
         wvInsert = (WebView) findViewById(R.id.webview_insert);
         wvPat = (WebView) findViewById(R.id.webview_pat);
@@ -303,6 +316,10 @@ public class MasterControl extends BaseActivity implements TransView, View.OnCli
         }
     }
 
+    /**
+     * método para confirmar el numero de la tarjeta
+     * @param pan
+     */
     private void showConfirmCardNO(String pan){
         btnConfirm = (Button) findViewById(R.id.cardno_confirm);
         btnCancel = (Button) findViewById(R.id.cardno_cancel);
@@ -314,6 +331,10 @@ public class MasterControl extends BaseActivity implements TransView, View.OnCli
         editCardNO.setText(pan);
     }
 
+    /**
+     * método para mostrar un input dependiendo del tipo que se requiera
+     * @param mode tipo de input
+     */
     private void showInput(final InputManager.Mode mode){
         final TextView inputTitle = (TextView) findViewById(R.id.input_title);
         EditText editText = (EditText) findViewById(R.id.input_edit);
@@ -366,6 +387,10 @@ public class MasterControl extends BaseActivity implements TransView, View.OnCli
         });
     }
 
+    /**
+     * segundo método para mostrar un input dependiendo del tipo que se requiera
+     * @param mode
+     */
     private void showInput2(InputManager.Mode mode){
         InputManager inputManager = new InputManager(MasterControl.this) ;
         inputManager.setListener(new InputListener() {
@@ -410,6 +435,10 @@ public class MasterControl extends BaseActivity implements TransView, View.OnCli
         setContentView(inputManager.getView());
     }
 
+    /**
+     * método para mostrar informacion sobre una transaccion
+     * @param data
+     */
     private void showOrignalTransInfo(TransLogData data){
         btnConfirm = (Button) findViewById(R.id.transinfo_confirm);
         btnCancel = (Button) findViewById(R.id.transinfo_cancel);
@@ -432,6 +461,10 @@ public class MasterControl extends BaseActivity implements TransView, View.OnCli
         transInfo.setText(info);
     }
 
+    /**
+     * método para mostrar un mensaje de información sobre la entrega
+     * @param msg
+     */
     private void showHanding(String msg){
         TextView tv = (TextView) findViewById(R.id.handing_msginfo);
         tv.setText(msg);
@@ -442,6 +475,9 @@ public class MasterControl extends BaseActivity implements TransView, View.OnCli
                 "<img width=\"128\" height=\"128\" src='file:///android_asset/gif/loading.gif'/></div></body></html>", "text/html", "UTF-8",null);
     }
 
+    /**
+     * método para mostrar el papel de la impresora
+     */
     private void showPrinterPaper(){
         btnConfirm = (Button) findViewById(R.id.printer_confirm);
         btnCancel = (Button) findViewById(R.id.printer_cancel);

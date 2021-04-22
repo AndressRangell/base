@@ -32,6 +32,12 @@ public class KeysparaFrags implements View.OnClickListener{
     private RadioButton desButton ;
     private RadioButton smButton ;
 
+    /**
+     * constructor que inicializa el fragmento y lee los datos del historial
+     * @param a
+     * @param l
+     * @param title
+     */
     public KeysparaFrags(Activity a , RelativeLayout l , String title){
         this.mActivity = a ;
         this.rLayout = l ;
@@ -46,6 +52,9 @@ public class KeysparaFrags implements View.OnClickListener{
         readHistory();
     }
 
+    /**
+     * método para leer los datos que están en el historial
+     */
     private void readHistory(){
         indexEdit.setText(String.valueOf(TMConfig.getInstance().getMasterKeyIndex()));
         desButton.setChecked(true);
@@ -59,6 +68,9 @@ public class KeysparaFrags implements View.OnClickListener{
         }
     }
 
+    /**
+     * método para guardar los datos del fragmento en una instancia MasterKeyInfo
+     */
     private void save(){
         String index = indexEdit.getText().toString();
         String data = dataEdit.getText().toString();

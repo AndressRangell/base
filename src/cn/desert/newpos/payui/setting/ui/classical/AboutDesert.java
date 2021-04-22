@@ -39,6 +39,12 @@ public class AboutDesert implements View.OnClickListener{
     }
 
     private ProgressDialog dialog = null ;
+
+    /**
+     * objeto que sobreescribe los metodos:
+     * handleMessage: manipula los mensajes que se deseen mostrar por medio de un Toast
+     * getDetails: obtiene el id del mensaje que se desea imprimir
+     */
     private Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {

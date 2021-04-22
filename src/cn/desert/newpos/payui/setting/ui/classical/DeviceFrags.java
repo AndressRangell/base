@@ -17,6 +17,12 @@ public class DeviceFrags {
     private Activity mContext ;
     private RelativeLayout rLayout ;
 
+    /**
+     * constructor que recibe la informacion sobre el fragmento
+     * @param c
+     * @param l
+     * @param title
+     */
     public DeviceFrags(Activity c , RelativeLayout l , String title){
         this.mContext = c ;
         this.rLayout = l ;
@@ -26,6 +32,9 @@ public class DeviceFrags {
         readDeviceInfo();
     }
 
+    /**
+     * método para mostrar la información sobre el dispositivo
+     */
     private void readDeviceInfo(){
         ((TextView)rLayout.findViewById(R.id.setting_deviceinfo_product)).
                 setText(android.os.Build.PRODUCT);

@@ -3,6 +3,7 @@
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c33878b2f0789e1127944fee197ec1d/jetified-android-baserecyle-master-v1.1/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8855aa709fdbfa71f9b3a32bf93cda5c/jetified-android-baserecyle-master-v1.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f02a0c6e3e5bb953adab496fb59a2fce/jetified-android-baserecyle-master-v1.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c33878b2f0789e1127944fee197ec1d/jetified-android-baserecyle-master-v1.1/res" />
@@ -11,6 +12,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8855aa709fdbfa71f9b3a32bf93cda5c/jetified-android-baserecyle-master-v1.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8855aa709fdbfa71f9b3a32bf93cda5c/jetified-android-baserecyle-master-v1.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8855aa709fdbfa71f9b3a32bf93cda5c/jetified-android-baserecyle-master-v1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f02a0c6e3e5bb953adab496fb59a2fce/jetified-android-baserecyle-master-v1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f02a0c6e3e5bb953adab496fb59a2fce/jetified-android-baserecyle-master-v1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f02a0c6e3e5bb953adab496fb59a2fce/jetified-android-baserecyle-master-v1.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

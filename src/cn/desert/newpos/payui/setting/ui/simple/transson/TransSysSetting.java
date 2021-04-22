@@ -48,6 +48,9 @@ public class TransSysSetting extends BaseActivity {
         });
     }
 
+    /**
+     * método para inicializar los datos de configuración del sistema
+     */
     private void initData(){
         traceNO = (EditText) findViewById(R.id.sys_trace_no);
         batchNo = (EditText) findViewById(R.id.sys_batch_no);
@@ -84,12 +87,21 @@ public class TransSysSetting extends BaseActivity {
         });
     }
 
+    /**
+     * método para enviar un adaptador con sus respectivos datos para posteriormente mostrarlos
+     * @param spinner
+     * @param arrayID
+     */
     private void setAdaper(Spinner spinner , int arrayID){
         String[] array = getResources().getStringArray(arrayID);
         ArrayAdapter adapter = new ArrayAdapter(this , android.R.layout.simple_spinner_dropdown_item , array);
         spinner.setAdapter(adapter);
     }
 
+    /**
+     * método para mostrar interruptor activado o desactivado
+     * @param is boolean -> true: drawable interruptor activado; false: drawable interruptor desactivado
+     */
     public void setEncrypedSwitch(boolean is){
         isEncrypted = is ;
         if(is){
@@ -99,6 +111,10 @@ public class TransSysSetting extends BaseActivity {
         }
     }
 
+    /**
+     * método para mostrar interruptor activado o desactivado
+     * @param is boolean -> true: drawable interruptor activado; false: drawable interruptor desactivado
+     */
     public void setPlayVoiceSwitch(boolean is){
         isPlay = is ;
         if(is){
@@ -108,6 +124,9 @@ public class TransSysSetting extends BaseActivity {
         }
     }
 
+    /**
+     * método para guardar los datos de configuración que hemos seleccionado
+     */
     private void save(){
         String tn = traceNO.getText().toString();
         String bn = batchNo.getText().toString();

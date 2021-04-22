@@ -44,6 +44,9 @@ public class CommunSettings extends BaseActivity {
         });
     }
 
+    /**
+     * método para inicializar datos de la configuración
+     */
     private void initData(){
         commun_timeout = (EditText) findViewById(R.id.setting_com_timeout);
         commun_public = (ImageView) findViewById(R.id.setting_com_public);
@@ -65,6 +68,10 @@ public class CommunSettings extends BaseActivity {
         });
     }
 
+    /**
+     * método para mostrar interruptor activado o desactivado
+     * @param is boolean -> true: drawable interruptor activado; false: drawable interruptor desactivado
+     */
     private void setPubSwitch(boolean is){
         isOpen = is ;
         if(is){
@@ -74,6 +81,9 @@ public class CommunSettings extends BaseActivity {
         }
     }
 
+    /**
+     * método para guardar los datos de configuración que hemos seleccionado
+     */
     private void save(){
         String ip = commun_pub_ip.getIPText() ;
         String port = commun_pub_port.getText().toString() ;

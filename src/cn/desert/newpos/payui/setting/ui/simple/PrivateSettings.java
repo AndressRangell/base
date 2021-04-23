@@ -50,7 +50,7 @@ public class PrivateSettings extends BaseActivity {
     }
 
     /**
-     *
+     * método para inicializar los datos de configuración del inicio privado
      */
     private void initData(){
         online_offline = (Button) findViewById(R.id.pri_online_offlne);
@@ -98,6 +98,10 @@ public class PrivateSettings extends BaseActivity {
         });
     }
 
+    /**
+     * método para establecer un interruptor en linea
+     * @param is
+     */
     public void setOnlineSwitch(boolean is){
         isOnline = is ;
         if(is){
@@ -107,6 +111,10 @@ public class PrivateSettings extends BaseActivity {
         }
     }
 
+    /**
+     * método para establecer un interruptor de depuración
+     * @param is
+     */
     public void setDebugSwitch(boolean is){
         isDebug = is ;
         if(is){
@@ -116,6 +124,10 @@ public class PrivateSettings extends BaseActivity {
         }
     }
 
+    /**
+     * método para establecer interruptor de clase
+     * @param is
+     */
     public void setClassSwitch(boolean is){
         isClassical = is ;
         if(is){

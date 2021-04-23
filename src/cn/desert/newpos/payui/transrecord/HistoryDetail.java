@@ -45,7 +45,9 @@ public class HistoryDetail extends BaseActivity {
 
     public static final String TRACENO_KEY = "TRACENO_KEY" ;
 
-
+    /**
+     * método para iniciar la vista de impresion de factura
+     */
     private void initView(){
         cardno = (TextView) findViewById(R.id.detail_cardno);
         date = (TextView) findViewById(R.id.detail_date);
@@ -128,6 +130,9 @@ public class HistoryDetail extends BaseActivity {
 
         }
 
+        /**
+         * método para cambiar de la actividad HistoryDetails a la actividad PrintLastTrans
+         */
         detail_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

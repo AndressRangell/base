@@ -8,6 +8,9 @@ import java.util.Locale;
  * Creado por zhouqiang el 11/11/2017.
  */
 
+/**
+ * esta clase contiene todos los logos del menu dentro de arreglos de drawables
+ */
 public class SecondMenu {
     public static final String IVKEY = "IVKEY" ;
     public static final String TVKEY = "TVKEY" ;

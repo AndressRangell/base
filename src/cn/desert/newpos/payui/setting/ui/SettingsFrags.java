@@ -56,6 +56,9 @@ public class SettingsFrags extends Activity implements AdapterView.OnItemClickLi
         init();
     }
 
+    /**
+     * método para inicializar los datos del fragmento de configuraciones
+     */
     private void init(){
         setContentView(R.layout.setting);
         mGrid = (GridView) findViewById(R.id.setting_gridview);
@@ -194,6 +197,7 @@ public class SettingsFrags extends Activity implements AdapterView.OnItemClickLi
     private static final String MAP_TV = "MAP_TV" ;
     private static final String MAP_IV = "MAP_IV" ;
     private ArrayList<HashMap<String,Object>> list ;
+
     private ListAdapter formatAdapter(){
         list = new ArrayList<>();
         String[] names = getResources().getStringArray(R.array.setting_items);
@@ -220,6 +224,9 @@ public class SettingsFrags extends Activity implements AdapterView.OnItemClickLi
                 new String[]{MAP_IV , MAP_TV},new int[]{R.id.setting_listitem_iv,R.id.setting_listitem_tv});
     }
 
+    /**
+     * método para cambiar el la contraseña actual del administrador, requiere introducir la contraseña actual
+     */
     private void changeMaintainPwd(){
         mDialog = UIUtils.centerDialog(this , R.layout.setting_home_pass, R.id.setting_pass_layout);
         final EditText newEdit = (EditText) mDialog.findViewById(R.id.setting_pass_new);

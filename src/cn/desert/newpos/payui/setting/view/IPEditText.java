@@ -31,6 +31,11 @@ public class IPEditText extends LinearLayout {
 
 	private SharedPreferences mPreferences;
 
+	/**
+	 * Constructor de la clase IPEditText para declarar elementos de la vista
+	 * @param context
+	 * @param attrs
+	 */
 	public IPEditText(Context context, AttributeSet attrs) {
 		super(context, attrs);
 
@@ -44,7 +49,10 @@ public class IPEditText extends LinearLayout {
 		OperatingEditText(context);
 	}
 
-
+	/**
+	 * método para manipular los datos de la IP de la pantalla app_ipedit
+	 * @param context
+	 */
 	private void OperatingEditText(final Context context) {
 		mFirstIP.addTextChangedListener(new TextWatcher() {
 
@@ -113,7 +121,6 @@ public class IPEditText extends LinearLayout {
 						mThirdIP.requestFocus();
 					}
 				}
-
 
 				if (start == 0
 						&& s.length() == 0
@@ -228,6 +235,10 @@ public class IPEditText extends LinearLayout {
 		});
 	}
 
+	/**
+	 * método para obtener la ip de los 4 EditText
+	 * @return
+	 */
 	public String getIPText() {
 		if (!PAYUtils.isNullWithTrim(mFirstIP.getText().toString())
 				&& !PAYUtils.isNullWithTrim(mSecondIP.getText().toString())
@@ -242,6 +253,10 @@ public class IPEditText extends LinearLayout {
 		}
 	}
 
+	/**
+	 * método para establecer o enviar las ip a los 4 EditText
+	 * @param ip
+	 */
 	public void setIPText(String[] ip){
 		mFirstIP.setText(ip[0]);
 		mSecondIP.setText(ip[1]);
@@ -249,6 +264,10 @@ public class IPEditText extends LinearLayout {
 		mFourthIP.setText(ip[3]);
 	}
 
+	/**
+	 * método para cambiar el estado de los EditText (activo - inactivo)
+	 * @param isLive
+	 */
 	public void setLiveOrDeath(boolean isLive){
 		if(!isLive){
 			mFirstIP.setTextColor(Color.GRAY);
@@ -267,6 +286,10 @@ public class IPEditText extends LinearLayout {
 		mFourthIP.setEnabled(isLive);
 	}
 
+	/**
+	 * método para validar que los EditText de ip estén correctos
+	 * @return
+	 */
 	public boolean isOk() {
 		if (PAYUtils.isNullWithTrim(mFirstIP.getText().toString())
 				|| PAYUtils.isNullWithTrim(mSecondIP.getText().toString())

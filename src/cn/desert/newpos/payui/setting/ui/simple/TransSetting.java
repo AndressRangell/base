@@ -56,6 +56,9 @@ public class TransSetting extends BaseActivity implements View.OnClickListener{
         });
     }
 
+    /**
+     * método para inicializar los datos de configuracion de la transacción
+     */
     private void initData(){
         merchant = (RelativeLayout) findViewById(R.id.setting_home_trans_merchant);
         master = (RelativeLayout) findViewById(R.id.setting_home_trans_pass);
@@ -91,6 +94,10 @@ public class TransSetting extends BaseActivity implements View.OnClickListener{
         });
     }
 
+    /**
+     * método para establecer el estilo del interruptor de tarjeta
+     * @param is
+     */
     public void setCardSwitch(boolean is){
         isUseCard = is ;
         if(is){
@@ -100,6 +107,10 @@ public class TransSetting extends BaseActivity implements View.OnClickListener{
         }
     }
 
+    /**
+     * método para establecer el estilo del interruptor del inicio de transaccion
+     * @param is
+     */
     public void setPBOCSwitch(boolean is){
         isPBOC = is ;
         if(is){
@@ -109,6 +120,10 @@ public class TransSetting extends BaseActivity implements View.OnClickListener{
         }
     }
 
+    /**
+     * método para establecer el estilo del interruptor de venta sin contacto
+     * @param is
+     */
     public void setPassSwith(boolean is){
         isInputPass = is ;
         if(is){
@@ -144,6 +159,9 @@ public class TransSetting extends BaseActivity implements View.OnClickListener{
         }
     }
 
+    /**
+     * método para cambiar la contraseña maestra
+     */
     private void changeMasterPwd(){
         mDialog = UIUtils.centerDialog(this , R.layout.setting_home_pass, R.id.setting_pass_layout);
         final EditText newEdit = (EditText) mDialog.findViewById(R.id.setting_pass_new);

@@ -117,6 +117,10 @@ public class PrintLastTrans extends BaseActivity implements TransInterface, View
         }
     };
 
+    /**
+     * método mostrar entrega para mostrar un mensaje y cargar un enlace web con una informacion especifica
+     * @param msg
+     */
     private void showHanding(String msg){
         TextView tv = (TextView) findViewById(R.id.handing_msginfo);
         tv.setText(msg);
@@ -128,7 +132,7 @@ public class PrintLastTrans extends BaseActivity implements TransInterface, View
     }
 
     /**
-     * start printing task
+     * método para iniciar tarea de impresión
      * @param task
      */
     private void print(final PrintTask task){

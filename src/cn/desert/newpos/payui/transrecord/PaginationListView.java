@@ -36,23 +36,41 @@ public class PaginationListView extends ListView implements OnScrollListener {
 
     private String notice=null;
 
+    /**
+     * constructor PaginationList recibe como parametro el contexto
+     * @param context
+     */
     public PaginationListView(Context context) {
         super(context);
         initView(context);
     }
 
-
+    /**
+     * constructor PaginationList recibe como parametro el contexto y una coleccion de atributos
+     * @param context
+     * @param attrs
+     */
     public PaginationListView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initView(context);
 
     }
 
+    /**
+     * constructor PaginationList recibe como parametro el contexto, una coleccion de atributos y un estilo
+     * @param context
+     * @param attrs
+     * @param defStyle
+     */
     public PaginationListView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         initView(context);
     }
 
+    /**
+     * método para inicializar los datos de la vista de detalles
+     * @param context
+     */
     private void initView(Context context) {
         LayoutInflater mInflater = LayoutInflater.from(context);
         footerView = mInflater.inflate(R.layout.rongpay_detail_footer, null);
@@ -81,12 +99,19 @@ public class PaginationListView extends ListView implements OnScrollListener {
         }
     }
 
+    /**
+     * método para inicializar los parametros de la vista
+     */
     public void initParameters(){
         this.finishFlag = false;
         this.isLoading = false;
         footerView.setVisibility(View.GONE);
     }
 
+    /**
+     * método para establecer una señal de finalizacion de la vista
+     * @param finishFlag
+     */
     public void setFinishFlag(boolean finishFlag){
         this.finishFlag = finishFlag;
         footerView.setVisibility(View.VISIBLE);

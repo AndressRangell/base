@@ -9,11 +9,23 @@ import java.util.Comparator;
  */
 
 public class ADComparator implements Comparator<String> {
+
+    /**
+     * método para sacar la diferencia entre dos números
+     * @param pathAD1
+     * @param pathAD2
+     * @return
+     */
     @Override
     public int compare(String pathAD1, String pathAD2) {
         return getAdNumber(pathAD1)-getAdNumber(pathAD2);
     }
 
+    /**
+     * método para obtener el número entre una barra / y un punto .
+     * @param pathAD
+     * @return
+     */
     private int getAdNumber(String pathAD){
         Log.d("ad" , "pathAD:"+pathAD);
         int beg = pathAD.lastIndexOf("/")+1;

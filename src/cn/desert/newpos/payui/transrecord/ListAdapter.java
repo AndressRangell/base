@@ -61,6 +61,10 @@ public abstract class ListAdapter<T> extends BaseAdapter implements RecyclerList
 		setList(arrayList);
 	}
 
+	/**
+	 * método para añadir elemento a la lista
+	 * @param list
+	 */
 	public void addAll(List<T> list) {
 		this.mList.addAll(list);
 //		notifyDataSetChanged();
@@ -110,6 +114,9 @@ public abstract class ListAdapter<T> extends BaseAdapter implements RecyclerList
 		}
 	}
 
+	/**
+	 * método para limpiar la lista
+	 */
 	public void clear() {
 		mList.clear();
 		notifyDataSetChanged();

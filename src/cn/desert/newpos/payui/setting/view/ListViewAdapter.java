@@ -27,22 +27,22 @@ public class ListViewAdapter extends BaseAdapter {
     HashMap<String, Boolean> states = new HashMap<>();
 
     static class ViewHolder {
-          ImageView iv;
-          RadioButton rb;
+        ImageView iv;
+        RadioButton rb;
     }
 
     public ListViewAdapter(Context context, int selected , int[] imgs) {
-          // TODO Auto-generated constructor stub
-          this.imgs = imgs;
-          this.selected = selected ;
-          this.context = context;
-          for (int i = 0 ; i < this.imgs.length ; i++){
-              if(selected == i){
-                  states.put(String.valueOf(selected) , true);
-              }else {
-                  states.put(String.valueOf(i) , false);
-              }
-          }
+        // TODO Auto-generated constructor stub
+        this.imgs = imgs;
+        this.selected = selected;
+        this.context = context;
+        for (int i = 0 ; i < this.imgs.length; i++){
+            if(selected == i){
+              states.put(String.valueOf(selected) , true);
+            }else {
+              states.put(String.valueOf(i) , false);
+            }
+        }
     }
 
     @Override
@@ -63,6 +63,13 @@ public class ListViewAdapter extends BaseAdapter {
       return position;
     }
 
+    /**
+     * método para obtener la vista que necesitemos y sus datos para mostrarlos
+     * @param position
+     * @param convertView
+     * @param parent
+     * @return
+     */
     @Override
     public View getView(final int position,
             View convertView, ViewGroup parent) {
@@ -102,6 +109,10 @@ public class ListViewAdapter extends BaseAdapter {
       return convertView;
     }
 
+    /**
+     * método para obtener la posicion del item seleccionado
+     * @return
+     */
     public int getSelectedItemPosition(){
         int positions = 0 ;
         for (int i = 0 ; i < states.size() ; i++){

@@ -43,6 +43,7 @@ import cn.desert.newpos.payui.simple.ADComparator;
 public class UIUtils {
 
     /**
+     * método para iniciar el activity ResultControl con los datos de respuesta
      * @param activity
      * @param flag
      * @param info
@@ -62,6 +63,7 @@ public class UIUtils {
 
 
     /**
+     * método para lanzar un toast a una actividad especifica con un mensaje de respuesta
      * @param activity
      * @param content
      */
@@ -85,6 +87,7 @@ public class UIUtils {
     }
 
     /**
+     * método para lanzar un toast a una actividad especifica con un mensaje de respuesta
      * @param activity
      * @param str
      */
@@ -106,6 +109,13 @@ public class UIUtils {
         toast.show();
     }
 
+    /**
+     * método para ejecutar un cuadro de dialogo con un mensaje
+     * @param mContext
+     * @param resID
+     * @param root
+     * @return
+     */
     public static Dialog centerDialog(Context mContext , int resID , int root){
         final Dialog pd = new Dialog(mContext, R.style.Translucent_Dialog);
         pd.setContentView(resID);
@@ -226,6 +236,7 @@ public class UIUtils {
     }
 
     /**
+     * método para decodificar mapa de bits obteniendo la información desde un archivo
      * @param pathName
      * @param reqWidth px
      * @param reqHeight px
@@ -243,7 +254,13 @@ public class UIUtils {
         return createScaleBitmap(src, reqWidth, reqHeight, options.inSampleSize);
     }
 
-
+    /**
+     * método para calcular el tamaño de muestra de un mapa de bits
+     * @param options
+     * @param reqWidth
+     * @param reqHeight
+     * @return
+     */
     private static int calculateInSampleSize(BitmapFactory.Options options,
                                              int reqWidth, int reqHeight) {
         final int height = options.outHeight;
@@ -261,7 +278,14 @@ public class UIUtils {
         return inSampleSize;
     }
 
-
+    /**
+     * método para crear mapa de bits de escala
+     * @param src
+     * @param dstWidth
+     * @param dstHeight
+     * @param inSampleSize
+     * @return
+     */
     private static Bitmap createScaleBitmap(Bitmap src, int dstWidth,
                                             int dstHeight, int inSampleSize) {
 

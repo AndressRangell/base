@@ -60,6 +60,10 @@ public class Welcome extends Activity {
 	private ListViewAdapter lva ;
 	private TMConfig tmConfig ;
 
+	/**
+	 * Se referencian los elementos de la vista y se administra el inflate de las vistas de bienvenida
+	 * @param savedInstanceState
+	 */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,10 +103,12 @@ public class Welcome extends Activity {
 		initViewDoor(viewDoor);
 		adapter = new SplashAdapter(mList);
 		mViewPager.setAdapter(adapter);
-    }    
-    
+    }
 
-    public class MyOnPageChangeListener implements OnPageChangeListener {
+	/**
+	 * método para capturar los cambios que se hagan en la página por medio de un oyente changeListener
+	 */
+	public class MyOnPageChangeListener implements OnPageChangeListener {
 		@Override
 		public void onPageSelected(int arg0) {
 			switch (arg0) {
@@ -127,6 +133,7 @@ public class Welcome extends Activity {
 			}
 			currIndex = arg0;
 		}
+
 		@Override
 		public void onPageScrolled(int arg0, float arg1, int arg2) {
 		}
@@ -136,8 +143,9 @@ public class Welcome extends Activity {
 		}
 	}
 
-	/*
-	call it on the welcome_whats_title.xml layout
+	/**
+	 * método para validar si la ip del dispositivo y el puerto son correctos
+	 * @param v
 	 */
 	public void next_step(View v){
 		if(0 == currIndex){
@@ -162,6 +170,11 @@ public class Welcome extends Activity {
 
 	private RadioButton online ;
 	private RadioButton offline ;
+
+	/**
+	 * método para iniciar la vista de transaccion online o local
+	 * @param v
+	 */
 	private void initView1(View v){
 		ipportLL = (LinearLayout) v.findViewById(R.id.welcome_1_ll);
 		port = (EditText) v.findViewById(R.id.welcome_1_port);
@@ -179,6 +192,10 @@ public class Welcome extends Activity {
 		}
 	}
 
+	/**
+	 * método para iniciar la vista de registrar salida
+	 * @param v
+	 */
 	private void initView2(View v){
 		RadioButton debug = (RadioButton) v.findViewById(R.id.welcome_2_debug);
 		RadioButton nodebug = (RadioButton) v.findViewById(R.id.welcome_2_nodebug);
@@ -197,6 +214,10 @@ public class Welcome extends Activity {
 		}
 	}
 
+	/**
+	 * método para iniciar la vista de clientes o logos
+	 * @param v
+	 */
 	private void initView3(View v){
 		ListView listView = (ListView) v.findViewById(R.id.welcome_3_lv);
 		listView.setSelected(true);
@@ -205,6 +226,10 @@ public class Welcome extends Activity {
 		listView.setAdapter(lva);
 	}
 
+	/**
+	 * método para iniciar la vista de estilo de la aplicacion (clasica o simple)
+	 * @param v
+	 */
 	private void initView4(View v){
 		final RadioButton classical = (RadioButton) v.findViewById(R.id.welcome_4_classical);
 		final RadioButton simple = (RadioButton) v.findViewById(R.id.welcome_4_simple);
@@ -241,8 +266,9 @@ public class Welcome extends Activity {
 		}
 	}
 
-	/*
-	Play animation
+	/**
+	 * método para iniciar la vista de puerta de inicio (la pantalla negra que carga al iniciar)
+	 * @param v
 	 */
 	private void initViewDoor(View v){
 		final ImageView mLeft = (ImageView) v.findViewById(R.id.imageLeft);
@@ -301,8 +327,8 @@ public class Welcome extends Activity {
 		});
 	}
 
-	/*
-	Después de la configuración, ingrese a HomeActivity.
+	/**
+	 * Después de la configuración, se ingresa a HomeActivity.
 	 */
 	private void startHome(){
 		Intent intent = new Intent();

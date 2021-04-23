@@ -91,6 +91,9 @@ public class HistoryTrans extends BaseActivity implements
         loadfirstData();
     }
 
+    /**
+     * método para validar si hay items en la lista, si existen items se carga la vista
+     */
     private void loadfirstData() {
         if (totalItem == 0) {
             showView(true);
@@ -100,6 +103,9 @@ public class HistoryTrans extends BaseActivity implements
         }
     }
 
+    /**
+     * método para cargar los datos al adaptador
+     */
     private void loadData() {
         int flag = 0;
         //Log.d("YUAN", "loadData >>>>>>>>>totalItem=" + totalItem);
@@ -120,6 +126,10 @@ public class HistoryTrans extends BaseActivity implements
         adapter.notifyDataSetChanged();
     }
 
+    /**
+     * método para mostrar la vista de historial
+     * @param isShow
+     */
     private void showView(boolean isShow) {
         if (isShow) {
             lv_trans.setVisibility(View.GONE);
@@ -131,6 +141,10 @@ public class HistoryTrans extends BaseActivity implements
         }
     }
 
+    /**
+     * método para iniciar el historial de detalles
+     * @param transLogData
+     */
     private void start2HistoryDetail(TransLogData transLogData){
 
         Bundle bundle = new Bundle();
@@ -169,6 +183,9 @@ public class HistoryTrans extends BaseActivity implements
         }, 100);
     }
 
+    /**
+     * método para crear un oyente de busqueda
+     */
     private final class SearchListener implements View.OnClickListener{
         @Override
         public void onClick(View v) {
@@ -190,7 +207,9 @@ public class HistoryTrans extends BaseActivity implements
         }
     }
 
-
+    /**
+     * método para validar si el input de busqueda está activo
+     */
     private void hintKb() {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
